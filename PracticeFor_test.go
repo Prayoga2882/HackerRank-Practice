@@ -24,5 +24,5 @@ func ForLoopIndex(value string) {
 
 func TestForLoop(t *testing.T) {
 	ForLoop()
-	// ForLoopIndex("Prayoga ")
+	ForLoopIndex("Prayoga ")
 }

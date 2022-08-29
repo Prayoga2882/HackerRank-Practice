@@ -5,6 +5,7 @@ import (
 	"testing"
 )
 
+
 func AppendInt(value []int) []int {
 	var pow []int	
 	for _, v := range value { // setiap range data/v itu adalah nilai dari yang di iterasi
