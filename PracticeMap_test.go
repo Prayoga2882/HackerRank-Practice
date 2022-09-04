@@ -5,10 +5,10 @@ import (
 	"testing"
 )
 
-func Map(){
+func Map() {
 	data := make(map[int]string)
-	data[0] = "aku"
-	data[1] = "kamu"
+	data[1] = "me"
+	data[2] = "you"
 
 	var value, isExist = data[1]
 
