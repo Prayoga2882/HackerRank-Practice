@@ -5,15 +5,22 @@ import (
 	"testing"
 )
 
-func Star(){
-	result := ""
-
-	for i:=5; i>0; i-- {
-		result = result + "*"
-		fmt.Println(result)
+func Star() {
+	for i := 5; i >= 1; i-- {
+		for j := 1; j <= i; j++ {
+			fmt.Printf("%d ", j)
+		}
+		fmt.Println()
 	}
-	// fmt.Println(result)
 }
+
+//	result := ""
+//
+//	for i := 5; i > 0; i-- {
+//		result = result + "*"
+//		fmt.Println(result)
+//	}
+//}
 
 func TestStar(t *testing.T) {
 	Star()
