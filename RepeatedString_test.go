@@ -1,7 +1,6 @@
 package hackerrank_test
 
 import (
-	"fmt"
 	"testing"
 )
 
@@ -10,11 +9,11 @@ func RepeatedString(s string, n int64) int64 {
 	occurrenceOfAInInput := OccurrenceOfA(s)
 	numberOfSubstring := int64(n / inputLength)
 
-	numberOfAs := numberOfSubstring  * occurrenceOfAInInput
+	numberOfAs := numberOfSubstring * occurrenceOfAInInput
 	reminder := n % inputLength // a
 
 	for i := int64(0); i < reminder; i++ {
-		if s[i]  == 'a' {
+		if s[i] == 'a' {
 			numberOfAs++
 		}
 	}
@@ -22,7 +21,7 @@ func RepeatedString(s string, n int64) int64 {
 	return numberOfAs
 }
 
-func OccurrenceOfA(s string) int64  {
+func OccurrenceOfA(s string) int64 {
 	var count int64
 	for i := range s {
 		if s[i] == 'a' {
@@ -34,8 +33,8 @@ func OccurrenceOfA(s string) int64  {
 }
 
 func TestRepeatedString(t *testing.T) {
-	data1 := "Agoy"
-	data2 := 123
-	result := RepeatedString(data1, int64(data2))
-	fmt.Print(result)
+	//data1 := "Agoy"
+	//data2 := 123
+	//result := RepeatedString(data1, int64(data2))
+	//fmt.Print(result)
 }

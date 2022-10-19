@@ -26,6 +26,6 @@ func Append(value string) []string {
 func TestAppend(t *testing.T) {
 	// result := Append("prayoga")
 	// fmt.Println(result)
-	result := AppendInt([]int{0, 0, 0})
-	fmt.Println(result)
+	//result := AppendInt([]int{0, 0, 0})
+	//fmt.Println(result)
 }
